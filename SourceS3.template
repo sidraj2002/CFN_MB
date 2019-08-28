@@ -1,0 +1,18 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+        "SourceS3": {
+            "Type": "AWS::S3::Bucket",
+            "DeletionPolicy" : "Delete",
+            "Properties": {
+                "AccessControl": "PublicReadWrite",
+                "Tags": [{"Key" : "Pipeline", "Value" : "SourceS3"}],
+                "BucketName" : "source-s3-bucket-us-east-1"
+
+              }
+            }
+          }
+
+
+
+            }
